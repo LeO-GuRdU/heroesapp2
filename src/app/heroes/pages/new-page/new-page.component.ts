@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroesService } from '../../services/heroes.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter, switchMap, tap } from 'rxjs/operators';
@@ -14,14 +14,14 @@ import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-
   styles: [],
 })
 export class NewPageComponent implements OnInit {
-  public heroForm = new FormGroup({
-    id: new FormControl(),
-    superhero: new FormControl(),
-    publisher: new FormControl(Publisher.MarvelComics),
-    alter_ego: new FormControl(),
-    first_appearance: new FormControl(),
-    characters: new FormControl(),
-    alt_img: new FormControl(),
+  public heroForm = new UntypedFormGroup({
+    id: new FormControl<string>(''),
+    superhero: new FormControl<string>(''),
+    publisher: new FormControl<Publisher>(Publisher.MarvelComics),
+    alter_ego: new FormControl<string>(''),
+    first_appearance: new FormControl<string>(''),
+    characters: new FormControl<string>(''),
+    alt_img: new FormControl<string>(''),
   });
   public publishers = [
     { id: 'DC Comics', value: 'DC - Comics' },

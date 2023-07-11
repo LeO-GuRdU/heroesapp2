@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 import { Hero } from '../../interfaces/hero.interface';
 import { HeroesService } from '../../services/heroes.service';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
@@ -12,7 +12,7 @@ import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 })
 export class SearchPageComponent implements OnInit {
 
-  public searchInput = new FormControl('');
+  public searchInput = new UntypedFormControl('');
   public heroes: Hero[] = [];
   public selectedHero? : Hero;
 
