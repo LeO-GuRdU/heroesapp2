@@ -10,11 +10,11 @@
     <p>
       <strong>Primera aparición:</strong>{{ hero.first_appearance }}
       <br>
-      <mat-chip-list>
+      <mat-chip-listbox>
         <mat-chip *ngFor="let name of hero.characters.split(',') | slice:0:3">
           {{ name }}
         </mat-chip>
-      </mat-chip-list>
+      </mat-chip-listbox>
     </p>
   </mat-card-content>
   <mat-divider></mat-divider>
