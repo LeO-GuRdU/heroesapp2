@@ -1,8 +1,8 @@
 {
-  "usuarios": [
+  "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -21,8 +21,7 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El",
-      "alt_img": "https://w0.peakpx.com/wallpaper/856/559/HD-wallpaper-superman-new-52-comics-dc-hero-justice-league-man-of-steel-new-52-superman.jpg"
+      "characters": "Kal-El"
     },
     {
       "id": "dc-flash",
@@ -167,15 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "ExVz6Ii",
-      "superhero": "Storm",
-      "publisher": "DC Comics",
-      "alter_ego": "Ororo Munroe",
-      "first_appearance": "Giant-Size X-Men #1",
-      "characters": "WindRider",
-      "alt_img": "https://static.wixstatic.com/media/48f9bc_8699ab92ec0247408e79e3423a46bcde~mv2.jpg/v1/fill/w_640,h_578,al_c,lg_1,q_85,enc_auto/48f9bc_8699ab92ec0247408e79e3423a46bcde~mv2.jpg"
     }
   ]
 }
